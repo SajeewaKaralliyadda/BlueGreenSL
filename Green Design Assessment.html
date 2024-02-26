@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-------------------bootstrap links------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-------------------fonts------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Pacifico&family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@300&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-------------------Font Awesome------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-------------------css sheet------------------->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Green Design Assessment</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/img01.jpg" />
+  </head>
+
+  <body>
+    <!--Navigation bar start-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Toggle button -->
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+          <div class="d-flex align-items-center">
+            <button
+              data-mdb-ripple-init
+              type="button"
+              class="btn btn-primary me-3"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!--hero image start-->
+    <div class="container-fluid">
+    <img
+        src="/assets/img/img 04.jpeg"
+              class="img-fluid"
+              alt="Image 01"
+              id="image01"
+            />
+    </div>
+    <!--hero image end-->
+    <br>
+    <p class="text-center h2">Green Design Assessment</p>
+    <br />
+    <br />
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-6">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Download Application Here</h5>
+              <p class="card-text">
+                <br />
+
+                <img
+                  src="/assets/img/img 03.png"
+                  alt="W3Schools"
+                  width="200"
+                  height="150"
+                />
+                <br />
+                <a
+                  href="/assets/Doc/Green Design Assessment.pdf"
+                  download
+                  class="btn btn-primary btn-sm mt-3"
+                  >Download</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upload Application Here</h5>
+              <p class="card-text">
+
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="pdfFile">Choose a PDF file:</label>
+                    <input type="file" id="pdfFile" name="pdfFile" accept=".pdf">
+                    <br><br><br><br><br><br>
+                    <!--  <input type="submit" value="Upload PDF" class="btn btn-primary btn-sm mt-3"> -->
+                  </form>
+                  <a
+                  href="/pay.html" target="_blank"
+                  class="btn btn-primary btn-sm mt-3"
+                  >Submit</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <hr class="hr" />
+
+    <!--footer start-->
+    <footer class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #0d6efd">
+        <p class="copytext">
+          &copy; <span id="currentYear">2023</span> Blue Green Sri Lanka. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!--footer end-->
+
+    <!-------------------back to top button------------------->
+
+    <button id="backToTopBtn" onclick="scrollToTop()">
+      <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

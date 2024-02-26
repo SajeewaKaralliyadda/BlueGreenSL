@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-------------------bootstrap links------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-------------------fonts------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Pacifico&family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@300&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-------------------Font Awesome------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-------------------css sheet------------------->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Pay Here</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/img01.jpg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-xs-8 mx-auto">
+          <div class="border shadow my-4 p-5">
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <img
+                  src="/assets/img/img01.jpg"
+                  alt="BGSL Pay logo"
+                  height="48"
+                />
+              </div>
+              <div class="fs-4" style="font-family: impact">
+                <strong><span class="text-secondary">Rs.</span> xxxx.xx</strong>
+              </div>
+            </div>
+            <div class="my-4">
+              <input
+                type="radio"
+                onchange="toggleForm('credit')"
+                name="chargeType"
+                id="creditCard"
+                checked
+              />
+              <label class="text-primary" for="creditCard"
+                ><strong>Credit Card</strong></label
+              >
+              <input
+                class="ms-3"
+                onchange="toggleForm('bank')"
+                type="radio"
+                name="chargeType"
+                id="ach"
+              />
+              <label class="text-primary" for="ach"
+                ><strong>Bank Transfer</strong></label
+              >
+              <!-- Add PayPal option -->
+              <input
+                class="ms-3"
+                onchange="toggleForm('paypal')"
+                type="radio"
+                name="chargeType"
+                id="paypal"
+              />
+              <label class="text-primary" for="paypal"
+                ><strong>PayPal</strong></label
+              >
+            </div>
+            <form action="">
+              <div id="formType"></div>
+              <button class="mt-4 btn-primary btn btn-lg w-100">Proceed</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br />
+    <hr class="hr" />
+
+    <!--footer start-->
+    <footer class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #0d6efd">
+        <p class="copytext">
+          &copy; <span id="currentYear">2023</span> Blue Green Sri Lanka. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!--footer end-->
+
+    <!-------------------back to top button------------------->
+
+    <button id="backToTopBtn" onclick="scrollToTop()">
+      <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
